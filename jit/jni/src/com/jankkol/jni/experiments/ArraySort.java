@@ -5,5 +5,5 @@ package com.jankkol.jni.experiments;
  */
 public interface ArraySort {
 
-    void sort(int[] arrayToSort);
+    int[] sort(int[] arrayToSort);
 }

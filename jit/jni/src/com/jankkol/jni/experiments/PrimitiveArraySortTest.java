@@ -15,11 +15,14 @@ public class PrimitiveArraySortTest {
 
     public static void main(String[] args) {
         int[] array = generateRandomInteger();
-        ArraySort arraySort = new JavaArraySortImpl();
-        arraySort.sort(array);
-        for(int i = 0; i < array.length; i ++){
-            System.out.print(array[i] + ", ");
+        ArraySort arraySort = new NativeCArraySortImpl();
+        long start = System.currentTimeMillis();
+        int[] sortedArray = arraySort.sort(array);
+        long end = System.currentTimeMillis();
+        for(int i = 0; i < sortedArray.length; i ++){
+            System.out.print(sortedArray[i] + ", ");
         }
+        System.out.print(end - start);
     }
 
     private static int[] generateRandomInteger() {

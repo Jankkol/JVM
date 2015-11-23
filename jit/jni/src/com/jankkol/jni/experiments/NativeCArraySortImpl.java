@@ -5,14 +5,14 @@ package com.jankkol.jni.experiments;
  */
 public class NativeCArraySortImpl implements ArraySort {
 
-    native void sortArray(int[] arrayToSort);
+    native int[] sortArray(int[] arrayToSort);
 
     static {
         System.loadLibrary("sortarray");
     }
 
     @Override
-    public void sort(int[] arrayToSort) {
-        sortArray(arrayToSort);
+    public int[] sort(int[] arrayToSort) {
+        return sortArray(arrayToSort);
     }
 }

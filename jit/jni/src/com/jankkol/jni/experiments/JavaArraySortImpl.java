@@ -6,8 +6,9 @@ package com.jankkol.jni.experiments;
 public class JavaArraySortImpl implements ArraySort {
 
     @Override
-    public void sort(int[] arrayToSort) {
+    public int[] sort(int[] arrayToSort) {
         quickSort(arrayToSort, 0, arrayToSort.length - 1);
+        return arrayToSort;
     }
 
     private void quickSort(int[] arrayToSort, int left, int right) {
