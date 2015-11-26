@@ -7,7 +7,7 @@ import java.util.Random;
  */
 public class PrimitiveArraySortTest {
 
-    public static int ARRAY_SIZE = 1000000;
+    public static int ARRAY_SIZE = 10000000;
 
     private static int MAX_RAND = 10000;
 
@@ -15,13 +15,13 @@ public class PrimitiveArraySortTest {
 
     public static void main(String[] args) {
         int[] array = generateRandomInteger();
-        ArraySort arraySort = new NativeCArraySortImpl();
+        ArraySort arraySort = new JavaArraySortImpl();
         long start = System.currentTimeMillis();
         int[] sortedArray = arraySort.sort(array);
         long end = System.currentTimeMillis();
-        for(int i = 0; i < sortedArray.length; i ++){
+        /*for(int i = 0; i < sortedArray.length; i ++){
             System.out.print(sortedArray[i] + ", ");
-        }
+        }*/
         System.out.print(end - start);
     }
 

@@ -32,10 +32,19 @@ void quicksort(jint x[],int first,int last){
 }
 
 JNIEXPORT jintArray JNICALL Java_com_jankkol_jni_experiments_NativeCArraySortImpl_sortArray(JNIEnv *env, jobject object, jintArray array) {
-    
+
+    jintArray result;
     jsize len = (*env)->GetArrayLength(env,array);
+    result = (*env)->NewIntArray(env, len);
+    if (result == NULL) {
+        return NULL; /* out of memory error thrown */
+    }    
+
     jint *body = (*env)->GetIntArrayElements(env,array,0);
     quicksort(body, 0, len);
+
+    (*env)->SetIntArrayRegion(env, result, 0, len, body);
+    return result;
     
 }
 
