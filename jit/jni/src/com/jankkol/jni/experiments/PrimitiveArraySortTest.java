@@ -18,13 +18,18 @@ public class PrimitiveArraySortTest {
     public static void main(String[] args) {
         int[] arrayFirst = generateRandomInteger();
         int[] arraySecond = arrayFirst.clone();
+        int[] arrayThird = arrayFirst.clone();
         ArraySort javaArraySort = new JavaArraySortImpl();
         ArraySort cArraySort = new NativeCArraySortImpl();
+        ArraySort cppArraySort = new NativeCPPArraySortImpl();
 
         long javaSortTime = sortArrayByCustomImpl(javaArraySort, arrayFirst);
         long cSortTime = sortArrayByCustomImpl(cArraySort, arraySecond);
+        long cppSortTime = sortArrayByCustomImpl(cppArraySort, arrayThird);
+
         System.out.println("Java time: " + javaSortTime);
         System.out.println("C time: " + cSortTime);
+        System.out.println("C++ time: " + cppSortTime);
     }
 
     private static int[] generateRandomInteger() {
