@@ -1,7 +1,7 @@
-#include<stdio.h>
-#include<jni.h>
-#include "com_jankkol_jni_experiments_NativeCPPArraySortImpl.h"
-
+#include <iostream>
+#include <stdio.h> 
+#include <stdlib.h>
+#include <time.h>
 
 int partition(int arr[], int left, int right) {
         int i = left, j = right;
@@ -33,20 +33,25 @@ void quickSort(int* arrayToSort, int left, int right) {
       quickSort(arrayToSort, index, right);
    }
 }
-JNIEXPORT jintArray JNICALL Java_com_jankkol_jni_experiments_NativeCPPArraySortImpl_sortArray(JNIEnv *env, jobject object, jintArray array) {
 
-    jintArray result;
-    jsize len = env->GetArrayLength(array);
-    result = env->NewIntArray(len);
-    if (result == NULL) {
-        return NULL; /* out of memory error thrown */
-    }    
+int main(int argc, char** argv) {
 
-    jint *body = env->GetIntArrayElements(array,0);
-    quickSort(body, 0, len);
+    int size = atoi(argv[1]);
+    int tab[size];
+    int i, j;
+    clock_t t1, t2;
 
-    env->SetIntArrayRegion(result, 0, len, body);
-    return result;
+    t1 = clock();   
+
+    for (i = 0; i < size; i++) {
+      tab[i] = rand() % 10000;
+    }
+    quickSort(tab, 0, size);
+    
+    t2 = clock();   
+    float diff = (((float)t2 - (float)t1) / 1000000.0F ) * 1000;   
+    std::cout << diff << "\n";
+    return 0;
     
 }
 

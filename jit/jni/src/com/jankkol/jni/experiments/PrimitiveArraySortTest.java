@@ -7,7 +7,7 @@ import java.util.Random;
  */
 public class PrimitiveArraySortTest {
 
-    public static int ARRAY_SIZE = 10000;
+    public static int ARRAY_SIZE = 1000000;
 
     private static int MAX_RAND = 10000;
 
@@ -16,17 +16,23 @@ public class PrimitiveArraySortTest {
     private static Random rand = new Random();
 
     public static void main(String[] args) {
-        int[] arrayFirst = generateRandomInteger();
-        int[] arraySecond = arrayFirst.clone();
-        int[] arrayThird = arrayFirst.clone();
+
+        int[] arrayFirst, arraySecond, arrayThird;
         ArraySort javaArraySort = new JavaArraySortImpl();
         ArraySort cArraySort = new NativeCArraySortImpl();
         ArraySort cppArraySort = new NativeCPPArraySortImpl();
 
-        long javaSortTime = sortArrayByCustomImpl(javaArraySort, arrayFirst);
-        long cSortTime = sortArrayByCustomImpl(cArraySort, arraySecond);
-        long cppSortTime = sortArrayByCustomImpl(cppArraySort, arrayThird);
-
+        long javaSortTime = 0;
+        long cSortTime = 0;
+        long cppSortTime = 0;
+        for (int i = 0; i < LOOP_ITERATION; i++) {
+            arrayFirst = generateRandomInteger();
+            arraySecond = arrayFirst.clone();
+            arrayThird = arrayFirst.clone();
+            javaSortTime += sortArrayByCustomImpl(javaArraySort, arrayFirst);
+            cSortTime += sortArrayByCustomImpl(cArraySort, arraySecond);
+            cppSortTime += sortArrayByCustomImpl(cppArraySort, arrayThird);
+        }
         System.out.println("Java time: " + javaSortTime);
         System.out.println("C time: " + cSortTime);
         System.out.println("C++ time: " + cppSortTime);
