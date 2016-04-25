@@ -173,7 +173,7 @@ No events
 
 Deoptimization events (2 events):
 Event: 0,087 Thread 0x00007f0d0c00a800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f0cfd11e8c0 method=java.util.Random.nextInt(I)I @ 58
-Event: 0,103 Thread 0x00007f0d0c00a800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f0cfd1201d0 method=com.jankkol.jni.experiments.PrimitiveArraySortTest.generateRandomInteger()[I @ 12
+Event: 0,103 Thread 0x00007f0d0c00a800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f0cfd1201d0 method=generateRandomIntegerArray()[I @ 12
 
 Internal exceptions (2 events):
 Event: 0,023 Thread 0x00007f0d0c00a800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x0000000781f12a60) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u65/4987/hotspot/src/shar

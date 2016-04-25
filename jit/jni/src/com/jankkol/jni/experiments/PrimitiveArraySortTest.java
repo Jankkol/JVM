@@ -26,7 +26,7 @@ public class PrimitiveArraySortTest {
         long cSortTime = 0;
         long cppSortTime = 0;
         for (int i = 0; i < LOOP_ITERATION; i++) {
-            arrayFirst = generateRandomInteger();
+            arrayFirst = generateRandomIntegerArray();
             arraySecond = arrayFirst.clone();
             arrayThird = arrayFirst.clone();
             javaSortTime += sortArrayByCustomImpl(javaArraySort, arrayFirst);
@@ -38,7 +38,7 @@ public class PrimitiveArraySortTest {
         System.out.println("C++ time: " + cppSortTime);
     }
 
-    private static int[] generateRandomInteger() {
+    private static int[] generateRandomIntegerArray() {
         int[] array = new int[ARRAY_SIZE];
         for (int i = 0; i < ARRAY_SIZE; i++) {
             array[i] = rand.nextInt(MAX_RAND) + 1; // rand number from 1 to MAX_RAND
@@ -48,9 +48,7 @@ public class PrimitiveArraySortTest {
 
     public static long sortArrayByCustomImpl(ArraySort sortImpl, int[] array) {
         long start = System.currentTimeMillis();
-        for (int i = 0; i < LOOP_ITERATION; i++) {
-            sortImpl.sort(array);
-        }
+        sortImpl.sort(array);
         long end = System.currentTimeMillis();
         return end - start;
     }
