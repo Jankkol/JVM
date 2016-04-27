@@ -15,6 +15,11 @@ public class BenchmarkParameters {
      */
     private long benchmarkIterationCount;
 
+    /**
+     * Number of benchmark iteration to be repeated
+     */
+    private int repeatBenchmark;
+
     public long getWarmUpIteration() {
         return warmUpIteration;
     }
@@ -29,5 +34,13 @@ public class BenchmarkParameters {
 
     public void setBenchmarkIterationCount(long benchmarkIterationCount) {
         this.benchmarkIterationCount = benchmarkIterationCount;
+    }
+
+    public int getRepeatBenchmark() {
+        return repeatBenchmark;
+    }
+
+    public void setRepeatBenchmark(int repeatBenchmark) {
+        this.repeatBenchmark = repeatBenchmark;
     }
 }
