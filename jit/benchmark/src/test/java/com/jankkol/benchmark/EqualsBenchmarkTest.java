@@ -1,14 +1,14 @@
 package com.jankkol.benchmark;
 
-import com.jankkol.benchmark.experiments.benchmark.SimpleLoopBenchmark;
+import com.jankkol.benchmark.experiments.benchmark.EqualsBenchmark;
+import com.jankkol.benchmark.experiments.parameters.EqualsParameters;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
- * Created by jan on 25.04.16.
+ * Created by jan on 28.04.16.
  */
-public class SimpleLoopBenchmarkTest {
-
+public class EqualsBenchmarkTest {
     private static BenchmarkFactory benchmarkFactory;
 
     private final static long WARM_UP_ITERATION = 1000000L;
@@ -17,19 +17,21 @@ public class SimpleLoopBenchmarkTest {
 
     private final static int REPEAT_ITERATION_TIME = 10;
 
+    private final static String STRING_TO_EQUAL = "test";
+
     @BeforeClass
     public static void setup() {
-        BenchmarkParameters benchmarkParameters = new BenchmarkParameters();
+        EqualsParameters benchmarkParameters = new EqualsParameters();
         benchmarkParameters.setWarmUpIteration(WARM_UP_ITERATION);
         benchmarkParameters.setBenchmarkIterationCount(BENCHMARK_ITERATION);
         benchmarkParameters.setRepeatBenchmark(REPEAT_ITERATION_TIME);
-        benchmarkFactory = new BenchmarkFactory(new SimpleLoopBenchmark(), benchmarkParameters);
+        benchmarkParameters.setStringToEqual(STRING_TO_EQUAL);
+        benchmarkFactory = new BenchmarkFactory(new EqualsBenchmark(), benchmarkParameters);
     }
 
     @Test
-    public void testSimpleLoop() {
+    public void quickSortBenchmark() {
         benchmarkFactory.start();
         benchmarkFactory.printFormattedResult();
     }
-
 }

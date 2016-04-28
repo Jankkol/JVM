@@ -1,5 +1,7 @@
 package com.jankkol.benchmark;
 
+import com.jankkol.benchmark.experiments.benchmark.SimpleLoopBenchmark;
+
 /**
  * Created by jan on 25.04.16.
  */
@@ -34,7 +36,7 @@ public class BenchmarkFactory {
         long start = System.nanoTime();
 
         long startWarmUp = System.nanoTime();
-        benchmark.run(benchmarkParameters.getWarmUpIteration());
+        benchmark.run(benchmarkParameters.getWarmUpIteration(), benchmarkParameters);
         long stopWarmUp = System.nanoTime();
 
         if (!isRepeatedBenchmark) {
@@ -49,7 +51,7 @@ public class BenchmarkFactory {
 
     private void singleBenchmark() {
         long startBenchmark = System.nanoTime();
-        benchmark.run(benchmarkParameters.getBenchmarkIterationCount());
+        benchmark.run(benchmarkParameters.getBenchmarkIterationCount(), benchmarkParameters);
         long stopBenchmark = System.nanoTime();
         benchmarkTime = stopBenchmark - startBenchmark;
     }
@@ -57,7 +59,7 @@ public class BenchmarkFactory {
     private void repeatedBenchmark() {
         for (int i = 0; i < benchmarkParameters.getRepeatBenchmark(); i++) {
             long startBenchmark = System.nanoTime();
-            benchmark.run(benchmarkParameters.getBenchmarkIterationCount());
+            benchmark.run(benchmarkParameters.getBenchmarkIterationCount(), benchmarkParameters);
             long stopBenchmark = System.nanoTime();
             benchmarkTimesArray[i] = stopBenchmark - startBenchmark;
         }
@@ -91,5 +93,15 @@ public class BenchmarkFactory {
 
     public long averageTime(long time, long iteration) {
         return (time / iteration);
+    }
+
+    public static void main(String[] args) {
+        BenchmarkParameters benchmarkParameters = new BenchmarkParameters();
+        benchmarkParameters.setWarmUpIteration(1000000L);
+        benchmarkParameters.setBenchmarkIterationCount(10000000L);
+        benchmarkParameters.setRepeatBenchmark(10);
+        BenchmarkFactory benchmarkFactory = new BenchmarkFactory(new SimpleLoopBenchmark(), benchmarkParameters);
+        benchmarkFactory.start();
+        benchmarkFactory.printFormattedResult();
     }
 }

@@ -5,6 +5,6 @@ package com.jankkol.benchmark;
  */
 public interface Benchmark {
 
-    void run(long iteration);
+    void run(long iteration, BenchmarkParameters benchmarkParameters);
 
 }
