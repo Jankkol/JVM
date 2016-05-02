@@ -1,6 +1,6 @@
 package com.jankkol.benchmark;
 
-import com.jankkol.benchmark.experiments.benchmark.EqualsBenchmark;
+import com.jankkol.benchmark.experiments.benchmark.EqualsInlineBenchmark;
 import com.jankkol.benchmark.experiments.parameters.EqualsParameters;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -8,7 +8,7 @@ import org.junit.Test;
 /**
  * Created by jan on 28.04.16.
  */
-public class EqualsBenchmarkTest {
+public class EqualsInlineBenchmarkTest {
     private static BenchmarkFactory benchmarkFactory;
 
     private final static long WARM_UP_ITERATION = 1000000L;
@@ -26,11 +26,11 @@ public class EqualsBenchmarkTest {
         benchmarkParameters.setBenchmarkIterationCount(BENCHMARK_ITERATION);
         benchmarkParameters.setRepeatBenchmark(REPEAT_ITERATION_TIME);
         benchmarkParameters.setStringToEqual(STRING_TO_EQUAL);
-        benchmarkFactory = new BenchmarkFactory(new EqualsBenchmark(), benchmarkParameters);
+        benchmarkFactory = new BenchmarkFactory(new EqualsInlineBenchmark(), benchmarkParameters);
     }
 
     @Test
-    public void quickSortBenchmark() {
+    public void equalsInlineTest() {
         benchmarkFactory.start();
         benchmarkFactory.printFormattedResult();
     }
