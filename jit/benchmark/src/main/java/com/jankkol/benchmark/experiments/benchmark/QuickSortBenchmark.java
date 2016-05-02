@@ -11,12 +11,6 @@ import java.util.Random;
  */
 public class QuickSortBenchmark implements Benchmark {
 
-    public static int ARRAY_SIZE = 10;
-
-    private static int MAX_RAND = 1000;
-
-    private static int[] ARRAY_TO_SORT;
-
     private static Random rand = new Random();
 
     public int[] sort(int[] arrayToSort) {
@@ -24,7 +18,7 @@ public class QuickSortBenchmark implements Benchmark {
         return arrayToSort;
     }
 
-    private void quickSort(int[] arrayToSort, int left, int right) {
+    public void quickSort(int[] arrayToSort, int left, int right) {
         int index = partition(arrayToSort, left, right);
         if (left < index - 1)
             quickSort(arrayToSort, left, index - 1);
@@ -53,21 +47,21 @@ public class QuickSortBenchmark implements Benchmark {
         return i;
     }
 
-    private static int[] generateRandomIntegerArray() {
-        int[] array = new int[ARRAY_SIZE];
-        for (int i = 0; i < ARRAY_SIZE; i++) {
-            array[i] = rand.nextInt(MAX_RAND) + 1; // rand number from 1 to MAX_RAND
+    public static int[] generateRandomIntegerArray(int arraySize, int maxRand) {
+        int[] array = new int[arraySize];
+        for (int i = 0; i < arraySize; i++) {
+            array[i] = rand.nextInt(maxRand) + 1; // rand number from 1 to MAX_RAND
         }
         return array;
     }
 
     public void run(long iteration, BenchmarkParameters benchmarkParameters) {
         QuickSortParameters quickSortParameters = (QuickSortParameters) benchmarkParameters;
-        ARRAY_SIZE = quickSortParameters.getArraySize();
-        MAX_RAND = quickSortParameters.getMaxRand();
+        int arraySize = quickSortParameters.getArraySize();
+        int maxRand = quickSortParameters.getMaxRand();
         for (int i = 0; i < iteration; i++) {
-            ARRAY_TO_SORT = generateRandomIntegerArray();
-            sort(ARRAY_TO_SORT);
+            int[] arrayToSort = generateRandomIntegerArray(arraySize, maxRand);
+            sort(arrayToSort);
         }
     }
 }

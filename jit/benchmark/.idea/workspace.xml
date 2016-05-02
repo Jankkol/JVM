@@ -22,21 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Benchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/Benchmark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleLoopBenchmark.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SimpleLoopBenchmark.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/SimpleLoopBenchmark.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62608695">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleLoopBenchmarkTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/jankkol/benchmark/SimpleLoopBenchmarkTest.java">
+      <file leaf-file-name="UnboxingBenchmark.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/UnboxingBenchmark.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,11 +46,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuickSortBenchmarkTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/jankkol/benchmark/QuickSortBenchmarkTest.java">
+      <file leaf-file-name="MultipleImplementationBenchmark.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/MultipleImplementationBenchmark.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2827#2828#0" expanded="true" />
+                <element signature="e#2878#2879#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MultipleImplementationBenchmarkTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/jankkol/benchmark/MultipleImplementationBenchmarkTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.54">
+              <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,28 +84,59 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EqualsBenchmarkTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/jankkol/benchmark/EqualsBenchmarkTest.java">
+      <file leaf-file-name="ArrayUtilInterface.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/ArrayUtilInterface.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractArrayUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/AbstractArrayUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BenchmarkParameters.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/BenchmarkParameters.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="55" column="48" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1006#1007#0" expanded="true" />
+                <element signature="e#1044#1045#0" expanded="true" />
+                <element signature="e#1195#1196#0" expanded="true" />
+                <element signature="e#1229#1230#0" expanded="true" />
+                <element signature="e#1284#1285#0" expanded="true" />
+                <element signature="e#1330#1331#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EqualsParameters.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/parameters/EqualsParameters.java">
+      <file leaf-file-name="MultipleImplementationParameters.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/parameters/MultipleImplementationParameters.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
               <folding>
-                <element signature="e#278#279#0" expanded="true" />
-                <element signature="e#314#315#0" expanded="true" />
-                <element signature="e#372#373#0" expanded="true" />
-                <element signature="e#422#423#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#515#516#0" expanded="true" />
+                <element signature="e#572#573#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
+                <element signature="e#657#658#0" expanded="true" />
+                <element signature="e#691#692#0" expanded="true" />
+                <element signature="e#744#745#0" expanded="true" />
+                <element signature="e#790#791#0" expanded="true" />
+                <element signature="e#847#848#0" expanded="true" />
+                <element signature="e#888#889#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,37 +146,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/QuickSortBenchmark.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+              <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BenchmarkFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/BenchmarkFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuickSortParameters.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/parameters/QuickSortParameters.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-              <folding>
-                <element signature="e#325#326#0" expanded="true" />
-                <element signature="e#372#373#0" expanded="true" />
-                <element signature="e#414#415#0" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
-                <element signature="e#518#519#0" expanded="true" />
-                <element signature="e#556#557#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,10 +178,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/SimpleLoopBenchmark.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jankkol/benchmark/SimpleLoopBenchmark.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/BenchmarkParameters.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jankkol/benchmark/SimpleLoopBenchmarkTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/QuickSortParameters.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/BenchmarkFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/QuickSortBenchmark.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jankkol/benchmark/QuickSortBenchmarkTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/EqulsBenchmark.java" />
@@ -182,6 +187,18 @@
         <option value="$PROJECT_DIR$/src/test/java/com/jankkol/benchmark/EqualsBenchmarkTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/EqualsBenchmark.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/EqualsBenchmark.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/parameters/UnboxingParameters.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/UnboxingBenchmark.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jankkol/benchmark/UnboxingBenchmarkTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/CollectionUtilInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/parameters/MultipleImplementationBenchmark.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/QuickSortBenchmark.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/BenchmarkFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/BenchmarkParameters.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/AbstractUtilInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/parameters/MultipleImplementationParameters.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/MultipleImplementationBenchmark.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jankkol/benchmark/MultipleImplementationBenchmarkTest.java" />
       </list>
     </option>
   </component>
@@ -193,10 +210,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1919" />
-    <option name="y" value="25" />
+    <option name="x" value="-1" />
     <option name="width" value="1922" />
-    <option name="height" value="1055" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -224,6 +240,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -365,7 +382,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -374,47 +390,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="extract.method.default.visibility" value="private" />
   </component>
-  <component name="RunManager" selected="JUnit.EqualsBenchmarkTest.quickSortBenchmark">
-    <configuration default="false" name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.jankkol.benchmark.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.jankkol.benchmark.App" />
-      <option name="VM_PARAMETERS" value="-XX:+PrintCompilation" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="benchmark" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="BenchmarkFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.jankkol.benchmark.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.jankkol.benchmark.BenchmarkFactory" />
-      <option name="VM_PARAMETERS" value="-XX:+PrintCompilation -XX:CompileThreshold=1" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="benchmark" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.MultipleImplementationBenchmarkTest.testMultipleImplementation">
     <configuration default="false" name="SimpleLoopBenchmarkTest.testSimpleLoop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -480,6 +456,58 @@
       <option name="PACKAGE_NAME" value="com.jankkol.benchmark" />
       <option name="MAIN_CLASS_NAME" value="com.jankkol.benchmark.EqualsBenchmarkTest" />
       <option name="METHOD_NAME" value="quickSortBenchmark" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="UnboxingBenchmarkTest.testUnboxing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.jankkol.benchmark.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="benchmark" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.jankkol.benchmark" />
+      <option name="MAIN_CLASS_NAME" value="com.jankkol.benchmark.UnboxingBenchmarkTest" />
+      <option name="METHOD_NAME" value="testUnboxing" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MultipleImplementationBenchmarkTest.testMultipleImplementation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.jankkol.benchmark.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="benchmark" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.jankkol.benchmark" />
+      <option name="MAIN_CLASS_NAME" value="com.jankkol.benchmark.MultipleImplementationBenchmarkTest" />
+      <option name="METHOD_NAME" value="testMultipleImplementation" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -738,19 +766,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.App" />
-      <item index="1" class="java.lang.String" itemvalue="Application.BenchmarkFactory" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.SimpleLoopBenchmarkTest.testSimpleLoop" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.QuickSortBenchmarkTest.testSimpleLoop" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.EqualsBenchmarkTest.quickSortBenchmark" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.SimpleLoopBenchmarkTest.testSimpleLoop" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.QuickSortBenchmarkTest.testSimpleLoop" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.EqualsBenchmarkTest.quickSortBenchmark" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UnboxingBenchmarkTest.testUnboxing" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MultipleImplementationBenchmarkTest.testMultipleImplementation" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.EqualsBenchmarkTest.quickSortBenchmark" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.QuickSortBenchmarkTest.testSimpleLoop" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.SimpleLoopBenchmarkTest.testSimpleLoop" />
-        <item index="3" class="java.lang.String" itemvalue="Application.BenchmarkFactory" />
-        <item index="4" class="java.lang.String" itemvalue="Application.App" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MultipleImplementationBenchmarkTest.testMultipleImplementation" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UnboxingBenchmarkTest.testUnboxing" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.EqualsBenchmarkTest.quickSortBenchmark" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.QuickSortBenchmarkTest.testSimpleLoop" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.SimpleLoopBenchmarkTest.testSimpleLoop" />
       </list>
     </recent_temporary>
   </component>
@@ -768,52 +796,53 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EqualsBenchmarkTest_quickSortBenchmark - 2016.04.28 at 21h 21m 40s.xml">
-      <configuration name="EqualsBenchmarkTest.quickSortBenchmark" configurationId="JUnit" />
+    <history-entry file="MultipleImplementationBenchmarkTest_testMultipleImplementation - 2016.05.02 at 12h 38m 01s.xml">
+      <configuration name="MultipleImplementationBenchmarkTest.testMultipleImplementation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EqualsBenchmarkTest_quickSortBenchmark - 2016.04.28 at 21h 22m 17s.xml">
-      <configuration name="EqualsBenchmarkTest.quickSortBenchmark" configurationId="JUnit" />
+    <history-entry file="MultipleImplementationBenchmarkTest_testMultipleImplementation - 2016.05.02 at 12h 57m 08s.xml">
+      <configuration name="MultipleImplementationBenchmarkTest.testMultipleImplementation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EqualsBenchmarkTest_quickSortBenchmark - 2016.04.28 at 21h 23m 15s.xml">
-      <configuration name="EqualsBenchmarkTest.quickSortBenchmark" configurationId="JUnit" />
+    <history-entry file="MultipleImplementationBenchmarkTest_testMultipleImplementation - 2016.05.02 at 12h 57m 55s.xml">
+      <configuration name="MultipleImplementationBenchmarkTest.testMultipleImplementation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EqualsBenchmarkTest_quickSortBenchmark - 2016.04.28 at 21h 23m 50s.xml">
-      <configuration name="EqualsBenchmarkTest.quickSortBenchmark" configurationId="JUnit" />
+    <history-entry file="MultipleImplementationBenchmarkTest_testMultipleImplementation - 2016.05.02 at 12h 58m 39s.xml">
+      <configuration name="MultipleImplementationBenchmarkTest.testMultipleImplementation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EqualsBenchmarkTest_quickSortBenchmark - 2016.04.28 at 21h 24m 11s.xml">
-      <configuration name="EqualsBenchmarkTest.quickSortBenchmark" configurationId="JUnit" />
+    <history-entry file="MultipleImplementationBenchmarkTest_testMultipleImplementation - 2016.05.02 at 12h 59m 06s.xml">
+      <configuration name="MultipleImplementationBenchmarkTest.testMultipleImplementation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EqualsBenchmarkTest_quickSortBenchmark - 2016.04.28 at 21h 24m 16s.xml">
-      <configuration name="EqualsBenchmarkTest.quickSortBenchmark" configurationId="JUnit" />
+    <history-entry file="MultipleImplementationBenchmarkTest_testMultipleImplementation - 2016.05.02 at 12h 59m 33s.xml">
+      <configuration name="MultipleImplementationBenchmarkTest.testMultipleImplementation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EqualsBenchmarkTest_quickSortBenchmark - 2016.04.28 at 21h 24m 19s.xml">
-      <configuration name="EqualsBenchmarkTest.quickSortBenchmark" configurationId="JUnit" />
+    <history-entry file="MultipleImplementationBenchmarkTest_testMultipleImplementation - 2016.05.02 at 12h 59m 58s.xml">
+      <configuration name="MultipleImplementationBenchmarkTest.testMultipleImplementation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QuickSortBenchmarkTest_testSimpleLoop - 2016.04.28 at 20h 59m 13s.xml">
-      <configuration name="QuickSortBenchmarkTest.testSimpleLoop" configurationId="JUnit" />
+    <history-entry file="MultipleImplementationBenchmarkTest_testMultipleImplementation - 2016.05.02 at 13h 00m 27s.xml">
+      <configuration name="MultipleImplementationBenchmarkTest.testMultipleImplementation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QuickSortBenchmarkTest_testSimpleLoop - 2016.04.28 at 21h 13m 03s.xml">
-      <configuration name="QuickSortBenchmarkTest.testSimpleLoop" configurationId="JUnit" />
+    <history-entry file="MultipleImplementationBenchmarkTest_testMultipleImplementation - 2016.05.02 at 13h 00m 50s.xml">
+      <configuration name="MultipleImplementationBenchmarkTest.testMultipleImplementation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SimpleLoopBenchmarkTest_testSimpleLoop - 2016.04.28 at 21h 11m 47s.xml">
-      <configuration name="SimpleLoopBenchmarkTest.testSimpleLoop" configurationId="JUnit" />
+    <history-entry file="MultipleImplementationBenchmarkTest_testMultipleImplementation - 2016.05.02 at 13h 01m 18s.xml">
+      <configuration name="MultipleImplementationBenchmarkTest.testMultipleImplementation" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1919" y="25" width="1922" height="1055" extended-state="6" />
+    <frame x="-1" y="0" width="1922" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892057" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36886102" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35947046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299389" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -824,7 +853,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299389" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -852,6 +880,106 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/Benchmark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/SimpleLoopBenchmark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jankkol/benchmark/SimpleLoopBenchmarkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jankkol/benchmark/QuickSortBenchmarkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/EqualsBenchmark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jankkol/benchmark/EqualsBenchmarkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/parameters/EqualsParameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/QuickSortBenchmark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/BenchmarkFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+          <folding>
+            <element signature="e#4141#4142#0" expanded="true" />
+            <element signature="e#4182#4183#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/parameters/QuickSortParameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/Benchmark.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -884,7 +1012,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="101" column="51" selection-start-line="101" selection-start-column="51" selection-end-line="101" selection-end-column="51" />
-          <folding />
+          <folding>
+            <element signature="e#4141#4142#0" expanded="true" />
+            <element signature="e#4182#4183#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -893,7 +1024,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
           <folding>
-            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -938,7 +1069,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="48" column="98" selection-start-line="48" selection-start-column="98" selection-end-line="48" selection-end-column="98" />
-          <folding />
+          <folding>
+            <element signature="e#4141#4142#0" expanded="true" />
+            <element signature="e#4182#4183#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -947,7 +1081,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding>
-            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -975,24 +1109,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/BenchmarkParameters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
-          <folding>
-            <element signature="e#910#911#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/BenchmarkFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/Benchmark.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1005,25 +1121,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-          <folding>
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jankkol/benchmark/SimpleLoopBenchmarkTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1040,10 +1138,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/parameters/UnboxingParameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding>
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/jankkol/benchmark/QuickSortBenchmarkTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="15" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jankkol/benchmark/UnboxingBenchmarkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1060,6 +1184,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jankkol/benchmark/SimpleLoopBenchmarkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/BenchmarkFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+          <folding>
+            <element signature="e#4141#4142#0" expanded="true" />
+            <element signature="e#4182#4183#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/BenchmarkParameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="48" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
+          <folding>
+            <element signature="e#1006#1007#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
+            <element signature="e#1229#1230#0" expanded="true" />
+            <element signature="e#1284#1285#0" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/QuickSortBenchmark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/SimpleLoopBenchmark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/UnboxingBenchmark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/EqualsBenchmark.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1070,20 +1260,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/QuickSortBenchmark.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/ArrayUtilInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/AbstractArrayUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/parameters/MultipleImplementationParameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/SimpleLoopBenchmark.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jankkol/benchmark/experiments/benchmark/MultipleImplementationBenchmark.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62608695">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2827#2828#0" expanded="true" />
+            <element signature="e#2878#2879#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jankkol/benchmark/MultipleImplementationBenchmarkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54">
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

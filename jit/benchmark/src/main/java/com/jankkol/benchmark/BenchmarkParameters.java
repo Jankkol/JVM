@@ -20,6 +20,11 @@ public class BenchmarkParameters {
      */
     private int repeatBenchmark;
 
+    /**
+     * If is true, warm up is not trigger. Used in MultipleImplementationBenchmark.
+     */
+    private boolean avoidWarmUp;
+
     public long getWarmUpIteration() {
         return warmUpIteration;
     }
@@ -42,5 +47,13 @@ public class BenchmarkParameters {
 
     public void setRepeatBenchmark(int repeatBenchmark) {
         this.repeatBenchmark = repeatBenchmark;
+    }
+
+    public boolean isAvoidWarmUp() {
+        return avoidWarmUp;
+    }
+
+    public void setAvoidWarmUp(boolean avoidWarmUp) {
+        this.avoidWarmUp = avoidWarmUp;
     }
 }
