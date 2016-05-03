@@ -1,1 +1,6 @@
+com/jankkol/benchmark/WriteResultUtil.class
+com/jankkol/benchmark/QuickSortBenchmarkTest.class
+com/jankkol/benchmark/MultipleImplementationBenchmarkTest.class
 com/jankkol/benchmark/SimpleLoopBenchmarkTest.class
+com/jankkol/benchmark/EqualsInlineBenchmarkTest.class
+com/jankkol/benchmark/UnboxingBenchmarkTest.class

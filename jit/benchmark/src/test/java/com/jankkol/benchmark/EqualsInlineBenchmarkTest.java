@@ -11,13 +11,15 @@ import org.junit.Test;
 public class EqualsInlineBenchmarkTest {
     private static BenchmarkFactory benchmarkFactory;
 
-    private final static long WARM_UP_ITERATION = 1000000L;
+    private final static long WARM_UP_ITERATION = 100000L;
 
-    private final static long BENCHMARK_ITERATION = 10000000L;
+    private final static long BENCHMARK_ITERATION = 1000000L;
 
     private final static int REPEAT_ITERATION_TIME = 10;
 
     private final static String STRING_TO_EQUAL = "test";
+
+    private final static String URL = "results/EqualsInlineBenchmark";
 
     @BeforeClass
     public static void setup() {
@@ -32,6 +34,7 @@ public class EqualsInlineBenchmarkTest {
     @Test
     public void equalsInlineTest() {
         benchmarkFactory.start();
-        benchmarkFactory.printFormattedResult();
+        String result = benchmarkFactory.printFormattedResult();
+        WriteResultUtil.writeResult(URL + "/withoutInline", this.getClass().getSimpleName(), result);
     }
 }

@@ -1,8 +1,14 @@
 package com.jankkol.benchmark;
 
 import com.jankkol.benchmark.experiments.benchmark.SimpleLoopBenchmark;
+import org.apache.commons.io.FileUtils;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.io.File;
+import java.io.IOException;
+import java.sql.Timestamp;
+import java.util.Date;
 
 /**
  * Created by jan on 25.04.16.
@@ -17,6 +23,8 @@ public class SimpleLoopBenchmarkTest {
 
     private final static int REPEAT_ITERATION_TIME = 10;
 
+    private final static String URL = "results/SimpleLoopBenchmark";
+
     @BeforeClass
     public static void setup() {
         BenchmarkParameters benchmarkParameters = new BenchmarkParameters();
@@ -27,9 +35,11 @@ public class SimpleLoopBenchmarkTest {
     }
 
     @Test
-    public void testSimpleLoop() {
+    public void testSimpleLoop() throws IOException {
         benchmarkFactory.start();
-        benchmarkFactory.printFormattedResult();
+        String result = benchmarkFactory.printFormattedResult();
+        WriteResultUtil.writeResult(URL, this.getClass().getSimpleName(), result);
     }
+
 
 }

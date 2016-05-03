@@ -1,4 +1,14 @@
+/home/jan/workspace/JVM/jit/benchmark/src/main/java/com/jankkol/benchmark/experiments/benchmark/UnboxingBenchmark.java
 /home/jan/workspace/JVM/jit/benchmark/src/main/java/com/jankkol/benchmark/BenchmarkParameters.java
-/home/jan/workspace/JVM/jit/benchmark/src/main/java/com/jankkol/benchmark/BenchmarkFactory.java
+/home/jan/workspace/JVM/jit/benchmark/src/main/java/com/jankkol/benchmark/experiments/parameters/EqualsParameters.java
+/home/jan/workspace/JVM/jit/benchmark/src/main/java/com/jankkol/benchmark/experiments/benchmark/QuickSortBenchmark.java
+/home/jan/workspace/JVM/jit/benchmark/src/main/java/com/jankkol/benchmark/experiments/benchmark/SimpleLoopBenchmark.java
 /home/jan/workspace/JVM/jit/benchmark/src/main/java/com/jankkol/benchmark/Benchmark.java
-/home/jan/workspace/JVM/jit/benchmark/src/main/java/com/jankkol/benchmark/experiments/SimpleLoopBenchmark.java
+/home/jan/workspace/JVM/jit/benchmark/src/main/java/com/jankkol/benchmark/experiments/benchmark/AbstractArrayUtil.java
+/home/jan/workspace/JVM/jit/benchmark/src/main/java/com/jankkol/benchmark/experiments/parameters/MultipleImplementationParameters.java
+/home/jan/workspace/JVM/jit/benchmark/src/main/java/com/jankkol/benchmark/experiments/parameters/QuickSortParameters.java
+/home/jan/workspace/JVM/jit/benchmark/src/main/java/com/jankkol/benchmark/experiments/benchmark/ArrayUtilInterface.java
+/home/jan/workspace/JVM/jit/benchmark/src/main/java/com/jankkol/benchmark/experiments/parameters/UnboxingParameters.java
+/home/jan/workspace/JVM/jit/benchmark/src/main/java/com/jankkol/benchmark/BenchmarkFactory.java
+/home/jan/workspace/JVM/jit/benchmark/src/main/java/com/jankkol/benchmark/experiments/benchmark/MultipleImplementationBenchmark.java
+/home/jan/workspace/JVM/jit/benchmark/src/main/java/com/jankkol/benchmark/experiments/benchmark/EqualsInlineBenchmark.java

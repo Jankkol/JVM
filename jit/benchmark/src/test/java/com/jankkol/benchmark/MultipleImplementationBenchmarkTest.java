@@ -3,6 +3,7 @@ package com.jankkol.benchmark;
 import com.jankkol.benchmark.experiments.benchmark.MultipleImplementationBenchmark;
 import com.jankkol.benchmark.experiments.benchmark.QuickSortBenchmark;
 import com.jankkol.benchmark.experiments.parameters.MultipleImplementationParameters;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -12,62 +13,105 @@ public class MultipleImplementationBenchmarkTest {
 
     private static BenchmarkFactory benchmarkFactory;
 
-    private final static long BENCHMARK_ITERATION = 1000000L;
+    private static MultipleImplementationParameters benchmarkParameters;
+
+    private final static long BENCHMARK_ITERATION = 100000L;
 
     private final static boolean AVOID_WARM_UP = true;
 
-    private final static boolean USE_INTERFACE = false;
+    private final static String URL = "results/MultipleImplementationBenchmark";
+
+    private static StringBuilder stringBuilder;
+
+    @Before
+    public void setup() {
+        benchmarkParameters = new MultipleImplementationParameters();
+        benchmarkParameters.setAvoidWarmUp(AVOID_WARM_UP);
+        benchmarkParameters.setBenchmarkIterationCount(BENCHMARK_ITERATION);
+        stringBuilder = new StringBuilder();
+    }
 
     @Test
     public void testMultipleImplementation() {
-
-        MultipleImplementationParameters benchmarkParameters = new MultipleImplementationParameters();
-        benchmarkParameters.setAvoidWarmUp(AVOID_WARM_UP);
-        benchmarkParameters.setBenchmarkIterationCount(BENCHMARK_ITERATION);
-        benchmarkParameters.setUseInterface(USE_INTERFACE);
+        benchmarkParameters.setUseInterface(true);
         int[] arrayToSort = QuickSortBenchmark.generateRandomIntegerArray(100, 1000);
         benchmarkParameters.setArrayToSort(arrayToSort);
 
         for (int i = 0; i < 10; i++) {
             benchmarkParameters.setSortImplementation(MultipleImplementationBenchmark.SortImplementation.QUICK_SORT);
-            System.out.println(String.format("*************************%s*************************", benchmarkParameters.getSortImplementation()));
+            stringBuilder.append(String.format("*************************%s*************************", benchmarkParameters.getSortImplementation()));
             benchmarkFactory = new BenchmarkFactory(new MultipleImplementationBenchmark(), benchmarkParameters);
             benchmarkFactory.start();
-            benchmarkFactory.printFormattedResult();
+            stringBuilder.append(benchmarkFactory.printFormattedResult());
         }
 
 
         benchmarkParameters.setSortImplementation(MultipleImplementationBenchmark.SortImplementation.QUICK_SORT);
-        System.out.println(String.format("*************************%s*************************", benchmarkParameters.getSortImplementation()));
+        stringBuilder.append(String.format("*************************%s*************************", benchmarkParameters.getSortImplementation()));
         benchmarkFactory = new BenchmarkFactory(new MultipleImplementationBenchmark(), benchmarkParameters);
         benchmarkFactory.start();
-        benchmarkFactory.printFormattedResult();
+        stringBuilder.append(benchmarkFactory.printFormattedResult());
 
 
         benchmarkParameters.setSortImplementation(MultipleImplementationBenchmark.SortImplementation.NO_SORT);
-        System.out.println(String.format("*************************%s*************************", benchmarkParameters.getSortImplementation()));
+        stringBuilder.append(String.format("*************************%s*************************", benchmarkParameters.getSortImplementation()));
         benchmarkFactory = new BenchmarkFactory(new MultipleImplementationBenchmark(), benchmarkParameters);
         benchmarkFactory.start();
-        benchmarkFactory.printFormattedResult();
+        stringBuilder.append(benchmarkFactory.printFormattedResult());
 
         benchmarkParameters.setSortImplementation(MultipleImplementationBenchmark.SortImplementation.JAVA_SORT);
-        System.out.println(String.format("*************************%s*************************", benchmarkParameters.getSortImplementation()));
+        stringBuilder.append(String.format("*************************%s*************************", benchmarkParameters.getSortImplementation()));
         benchmarkFactory = new BenchmarkFactory(new MultipleImplementationBenchmark(), benchmarkParameters);
         benchmarkFactory.start();
-        benchmarkFactory.printFormattedResult();
+        stringBuilder.append(benchmarkFactory.printFormattedResult());
 
         benchmarkParameters.setSortImplementation(MultipleImplementationBenchmark.SortImplementation.JAVA_SORT);
-        System.out.println(String.format("*************************%s*************************", benchmarkParameters.getSortImplementation()));
+        stringBuilder.append(String.format("*************************%s*************************", benchmarkParameters.getSortImplementation()));
         benchmarkFactory = new BenchmarkFactory(new MultipleImplementationBenchmark(), benchmarkParameters);
         benchmarkFactory.start();
-        benchmarkFactory.printFormattedResult();
+        stringBuilder.append(benchmarkFactory.printFormattedResult());
 
         for (int i = 0; i < 2; i++) {
             benchmarkParameters.setSortImplementation(MultipleImplementationBenchmark.SortImplementation.QUICK_SORT);
-            System.out.println(String.format("*************************%s*************************", benchmarkParameters.getSortImplementation()));
+            stringBuilder.append(String.format("*************************%s*************************", benchmarkParameters.getSortImplementation()));
             benchmarkFactory = new BenchmarkFactory(new MultipleImplementationBenchmark(), benchmarkParameters);
             benchmarkFactory.start();
-            benchmarkFactory.printFormattedResult();
+            stringBuilder.append(benchmarkFactory.printFormattedResult());
         }
+        WriteResultUtil.writeResult(URL + "/multipleInterfaceImplementation", this.getClass().getSimpleName(), stringBuilder.toString());
+    }
+
+    @Test
+    public void testAbstractCall() {
+        int[] arrayToSort = QuickSortBenchmark.generateRandomIntegerArray(100, 1000);
+        benchmarkParameters.setArrayToSort(arrayToSort);
+        benchmarkParameters.setAvoidWarmUp(false);
+        benchmarkParameters.setWarmUpIteration(benchmarkParameters.getBenchmarkIterationCount());
+        benchmarkParameters.setUseInterface(false);
+        benchmarkParameters.setRepeatBenchmark(10);
+        benchmarkParameters.setSortImplementation(MultipleImplementationBenchmark.SortImplementation.QUICK_SORT);
+
+        stringBuilder.append(String.format("*************************%s*************************", benchmarkParameters.getSortImplementation()));
+        benchmarkFactory = new BenchmarkFactory(new MultipleImplementationBenchmark(), benchmarkParameters);
+        benchmarkFactory.start();
+        stringBuilder.append(benchmarkFactory.printFormattedResult());
+        WriteResultUtil.writeResult(URL + "/abstractCall", this.getClass().getSimpleName(), stringBuilder.toString());
+    }
+
+    @Test
+    public void testInterfaceCall() {
+        int[] arrayToSort = QuickSortBenchmark.generateRandomIntegerArray(100, 1000);
+        benchmarkParameters.setArrayToSort(arrayToSort);
+        benchmarkParameters.setAvoidWarmUp(false);
+        benchmarkParameters.setRepeatBenchmark(10);
+        benchmarkParameters.setWarmUpIteration(benchmarkParameters.getBenchmarkIterationCount());
+        benchmarkParameters.setUseInterface(true);
+        benchmarkParameters.setSortImplementation(MultipleImplementationBenchmark.SortImplementation.QUICK_SORT);
+
+        stringBuilder.append(String.format("*************************%s*************************", benchmarkParameters.getSortImplementation()));
+        benchmarkFactory = new BenchmarkFactory(new MultipleImplementationBenchmark(), benchmarkParameters);
+        benchmarkFactory.start();
+        stringBuilder.append(benchmarkFactory.printFormattedResult());
+        WriteResultUtil.writeResult(URL + "/interfaceCall", this.getClass().getSimpleName(), stringBuilder.toString());
     }
 }

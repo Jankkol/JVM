@@ -65,14 +65,13 @@ public class BenchmarkFactory {
         }
     }
 
-    public void printFormattedResult() {
+    public String printFormattedResult() {
         StringBuilder stringBuilder = new StringBuilder();
         if (!benchmarkParameters.isAvoidWarmUp()) {
             stringBuilder.append("--------------------------- WARM UP ---------------------------").append("\n");
             stringBuilder.append("Warm up time : ").append(warmUpTime / TO_MILIS).append("ms\n");
             stringBuilder.append("Warm up iteration time : ").append(averageTime(warmUpTime, benchmarkParameters.getWarmUpIteration())).append(" nano seconds\n");
             stringBuilder.append("Warm up iteration per ms: ").append(iterationPerMs(warmUpTime, benchmarkParameters.getWarmUpIteration())).append("\n");
-            ;
         }
         stringBuilder.append("--------------------------- BENCHMARK ---------------------------").append("\n");
         if (!isRepeatedBenchmark) {
@@ -85,7 +84,6 @@ public class BenchmarkFactory {
                 stringBuilder.append("Benchmark time : ").append(benchmarkTimesArray[i] / TO_MILIS).append("ms\n");
                 stringBuilder.append("Benchmark iteration time : ").append(averageTime(benchmarkTimesArray[i], benchmarkParameters.getBenchmarkIterationCount())).append(" nano seconds\n");
                 stringBuilder.append("Benchmark iteration per ms: ").append(iterationPerMs(benchmarkTimesArray[i], benchmarkParameters.getBenchmarkIterationCount())).append("\n");
-                ;
             }
         }
 
@@ -94,6 +92,7 @@ public class BenchmarkFactory {
         stringBuilder.append("Benchmark iteration count : ").append(benchmarkParameters.getBenchmarkIterationCount()).append("\n");
         stringBuilder.append("Benchmark overall time : ").append(duration / TO_MILIS).append("ms\n");
         System.out.println(stringBuilder.toString());
+        return stringBuilder.toString();
     }
 
     private long iterationPerMs(long benchmarkTime, long benchmarkIterationCount) {

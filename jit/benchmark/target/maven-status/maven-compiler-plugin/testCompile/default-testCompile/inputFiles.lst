@@ -1,1 +1,6 @@
+/home/jan/workspace/JVM/jit/benchmark/src/test/java/com/jankkol/benchmark/QuickSortBenchmarkTest.java
+/home/jan/workspace/JVM/jit/benchmark/src/test/java/com/jankkol/benchmark/UnboxingBenchmarkTest.java
 /home/jan/workspace/JVM/jit/benchmark/src/test/java/com/jankkol/benchmark/SimpleLoopBenchmarkTest.java
+/home/jan/workspace/JVM/jit/benchmark/src/test/java/com/jankkol/benchmark/MultipleImplementationBenchmarkTest.java
+/home/jan/workspace/JVM/jit/benchmark/src/test/java/com/jankkol/benchmark/EqualsInlineBenchmarkTest.java
+/home/jan/workspace/JVM/jit/benchmark/src/test/java/com/jankkol/benchmark/WriteResultUtil.java

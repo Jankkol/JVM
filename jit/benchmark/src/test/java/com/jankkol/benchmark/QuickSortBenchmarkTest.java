@@ -11,30 +11,41 @@ import org.junit.Test;
 public class QuickSortBenchmarkTest {
     private static BenchmarkFactory benchmarkFactory;
 
-    private final static long WARM_UP_ITERATION = 1000000L;
+    private final static QuickSortParameters benchmarkParameters = new QuickSortParameters();
 
-    private final static long BENCHMARK_ITERATION = 10000000L;
+    private final static long WARM_UP_ITERATION = 100000L;
+
+    private final static long BENCHMARK_ITERATION = 100000L;
 
     private final static int REPEAT_ITERATION_TIME = 10;
 
-    private final static int ARRAY_SIZE = 10;
-
     private final static int MAX_RAND = 100;
+
+    private final static String URL = "results/QuickSortBenchmark";
 
     @BeforeClass
     public static void setup() {
-        QuickSortParameters benchmarkParameters = new QuickSortParameters();
         benchmarkParameters.setWarmUpIteration(WARM_UP_ITERATION);
         benchmarkParameters.setBenchmarkIterationCount(BENCHMARK_ITERATION);
         benchmarkParameters.setRepeatBenchmark(REPEAT_ITERATION_TIME);
-        benchmarkParameters.setArraySize(ARRAY_SIZE);
         benchmarkParameters.setMaxRand(MAX_RAND);
-        benchmarkFactory = new BenchmarkFactory(new QuickSortBenchmark(), benchmarkParameters);
     }
 
     @Test
-    public void quickSortBenchmark() {
+    public void quickSortSmallArrayBenchmark() {
+        benchmarkParameters.setArraySize(100);
+        benchmarkFactory = new BenchmarkFactory(new QuickSortBenchmark(), benchmarkParameters);
         benchmarkFactory.start();
-        benchmarkFactory.printFormattedResult();
+        String result = benchmarkFactory.printFormattedResult();
+        WriteResultUtil.writeResult(URL + "/smallArray", this.getClass().getSimpleName(), result);
+    }
+
+    @Test
+    public void quickSortBigArrayBenchmark() {
+        benchmarkParameters.setArraySize(1000);
+        benchmarkFactory = new BenchmarkFactory(new QuickSortBenchmark(), benchmarkParameters);
+        benchmarkFactory.start();
+        String result = benchmarkFactory.printFormattedResult();
+        WriteResultUtil.writeResult(URL + "/bigArray", this.getClass().getSimpleName(), result);
     }
 }
