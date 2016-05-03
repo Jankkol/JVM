@@ -1,0 +1,49 @@
+--------------------------- WARM UP ---------------------------
+Warm up time : 6997ms
+Warm up iteration time : 69971 nano seconds
+Warm up iteration per ms: 14
+--------------------------- BENCHMARK ---------------------------
+Stage : 0
+Benchmark time : 6888ms
+Benchmark iteration time : 68887 nano seconds
+Benchmark iteration per ms: 14
+Stage : 1
+Benchmark time : 6701ms
+Benchmark iteration time : 67016 nano seconds
+Benchmark iteration per ms: 14
+Stage : 2
+Benchmark time : 6705ms
+Benchmark iteration time : 67050 nano seconds
+Benchmark iteration per ms: 14
+Stage : 3
+Benchmark time : 6693ms
+Benchmark iteration time : 66934 nano seconds
+Benchmark iteration per ms: 14
+Stage : 4
+Benchmark time : 6695ms
+Benchmark iteration time : 66958 nano seconds
+Benchmark iteration per ms: 14
+Stage : 5
+Benchmark time : 6687ms
+Benchmark iteration time : 66875 nano seconds
+Benchmark iteration per ms: 14
+Stage : 6
+Benchmark time : 6699ms
+Benchmark iteration time : 66994 nano seconds
+Benchmark iteration per ms: 14
+Stage : 7
+Benchmark time : 6693ms
+Benchmark iteration time : 66935 nano seconds
+Benchmark iteration per ms: 14
+Stage : 8
+Benchmark time : 6795ms
+Benchmark iteration time : 67951 nano seconds
+Benchmark iteration per ms: 14
+Stage : 9
+Benchmark time : 6737ms
+Benchmark iteration time : 67374 nano seconds
+Benchmark iteration per ms: 14
+--------------------------- OVERALL ---------------------------
+Warm up iteration performed : 100000
+Benchmark iteration count : 100000
+Benchmark overall time : 74295ms

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.jankkol.benchmark.QuickSortBenchmarkTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 81.082 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 79.629 sec

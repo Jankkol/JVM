@@ -1,0 +1,112 @@
+*************************QUICK_SORT*************************--------------------------- BENCHMARK ---------------------------
+Benchmark time : 249ms
+Benchmark iteration time : 2495 nano seconds
+Benchmark iteration per ms: 401
+--------------------------- OVERALL ---------------------------
+Warm up iteration performed : 0
+Benchmark iteration count : 100000
+Benchmark overall time : 249ms
+*************************QUICK_SORT*************************--------------------------- BENCHMARK ---------------------------
+Benchmark time : 174ms
+Benchmark iteration time : 1741 nano seconds
+Benchmark iteration per ms: 574
+--------------------------- OVERALL ---------------------------
+Warm up iteration performed : 0
+Benchmark iteration count : 100000
+Benchmark overall time : 174ms
+*************************QUICK_SORT*************************--------------------------- BENCHMARK ---------------------------
+Benchmark time : 179ms
+Benchmark iteration time : 1792 nano seconds
+Benchmark iteration per ms: 558
+--------------------------- OVERALL ---------------------------
+Warm up iteration performed : 0
+Benchmark iteration count : 100000
+Benchmark overall time : 179ms
+*************************QUICK_SORT*************************--------------------------- BENCHMARK ---------------------------
+Benchmark time : 188ms
+Benchmark iteration time : 1887 nano seconds
+Benchmark iteration per ms: 531
+--------------------------- OVERALL ---------------------------
+Warm up iteration performed : 0
+Benchmark iteration count : 100000
+Benchmark overall time : 188ms
+*************************QUICK_SORT*************************--------------------------- BENCHMARK ---------------------------
+Benchmark time : 221ms
+Benchmark iteration time : 2214 nano seconds
+Benchmark iteration per ms: 452
+--------------------------- OVERALL ---------------------------
+Warm up iteration performed : 0
+Benchmark iteration count : 100000
+Benchmark overall time : 221ms
+*************************QUICK_SORT*************************--------------------------- BENCHMARK ---------------------------
+Benchmark time : 133ms
+Benchmark iteration time : 1332 nano seconds
+Benchmark iteration per ms: 751
+--------------------------- OVERALL ---------------------------
+Warm up iteration performed : 0
+Benchmark iteration count : 100000
+Benchmark overall time : 133ms
+*************************QUICK_SORT*************************--------------------------- BENCHMARK ---------------------------
+Benchmark time : 130ms
+Benchmark iteration time : 1302 nano seconds
+Benchmark iteration per ms: 769
+--------------------------- OVERALL ---------------------------
+Warm up iteration performed : 0
+Benchmark iteration count : 100000
+Benchmark overall time : 130ms
+*************************QUICK_SORT*************************--------------------------- BENCHMARK ---------------------------
+Benchmark time : 129ms
+Benchmark iteration time : 1297 nano seconds
+Benchmark iteration per ms: 775
+--------------------------- OVERALL ---------------------------
+Warm up iteration performed : 0
+Benchmark iteration count : 100000
+Benchmark overall time : 129ms
+*************************QUICK_SORT*************************--------------------------- BENCHMARK ---------------------------
+Benchmark time : 136ms
+Benchmark iteration time : 1367 nano seconds
+Benchmark iteration per ms: 735
+--------------------------- OVERALL ---------------------------
+Warm up iteration performed : 0
+Benchmark iteration count : 100000
+Benchmark overall time : 136ms
+*************************QUICK_SORT*************************--------------------------- BENCHMARK ---------------------------
+Benchmark time : 143ms
+Benchmark iteration time : 1439 nano seconds
+Benchmark iteration per ms: 699
+--------------------------- OVERALL ---------------------------
+Warm up iteration performed : 0
+Benchmark iteration count : 100000
+Benchmark overall time : 143ms
+*************************NO_SORT*************************--------------------------- BENCHMARK ---------------------------
+Benchmark time : 14ms
+Benchmark iteration time : 147 nano seconds
+Benchmark iteration per ms: 7142
+--------------------------- OVERALL ---------------------------
+Warm up iteration performed : 0
+Benchmark iteration count : 100000
+Benchmark overall time : 14ms
+*************************JAVA_SORT*************************--------------------------- BENCHMARK ---------------------------
+Benchmark time : 149ms
+Benchmark iteration time : 1490 nano seconds
+Benchmark iteration per ms: 671
+--------------------------- OVERALL ---------------------------
+Warm up iteration performed : 0
+Benchmark iteration count : 100000
+Benchmark overall time : 149ms
+*************************QUICK_SORT*************************--------------------------- BENCHMARK ---------------------------
+Benchmark time : 127ms
+Benchmark iteration time : 1277 nano seconds
+Benchmark iteration per ms: 787
+--------------------------- OVERALL ---------------------------
+Warm up iteration performed : 0
+Benchmark iteration count : 100000
+Benchmark overall time : 127ms
+*************************QUICK_SORT*************************--------------------------- BENCHMARK ---------------------------
+Benchmark time : 133ms
+Benchmark iteration time : 1335 nano seconds
+Benchmark iteration per ms: 751
+--------------------------- OVERALL ---------------------------
+Warm up iteration performed : 0
+Benchmark iteration count : 100000
+Benchmark overall time : 133ms

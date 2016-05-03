@@ -1,0 +1,35 @@
+-XX:+PrintCompilation
+-XX:FreqInlineSize=
+
+Plan Testów JIT
+
+1) Unboxing (tabela plus wykres, wynik w iteracjach na ms):
+a) wersja primitives 10 repeatów
+b) wersja objects 10 repatów
+c) wnioski, może wykres
+
+2) QuickSort(tabela plus wykres, wyniki w nano sekundach na iteracje):
+a) wielkość tablicy 100, 10 repeat
+b) wielkość tablicy 1000, 10 repeatow
+
+3) Equlas inline(tabela, bez wykresu, opis, wyniki w iteracjach na ms):
+a) test z i bez inlinu, użycie flagi kompilacji
+
+4) Multiple Implementation benchmark():
+a) optymalizacja interfejsu, optymalizacja abstractu (porównianie, wykres + tabelka, z rozgrzewką wszystkie 3 implementacje)
+b) przeplatanie implementacji, powrót do pierwszej(wywołanie z interfejsu, tabelka)
+
+5) Compilator vs Server vs Interpreter na przykładnie quicksort(tabela, wykres)
+
+6) java 32/64bit na podstawie quicksort
+
+7) java 6 vs java 8 na podstawie MultipleImplementationBenchmark oraz quicksort(dwie duże tabele)
+a) multiple benchmark - test przeplatania implementacji: parametry(strukturadanych, kompilator, wersja javy) 
+b) quicksort parametry(strukturadanych, kompilator, wersja javy) 
+
+++++
+do każdego punktu kawałki kodu
+++++
+
+++++
+krótki opis frameworku, przykładowy output

@@ -46,20 +46,7 @@ public class MultipleImplementationBenchmarkTest {
         }
 
 
-        benchmarkParameters.setSortImplementation(MultipleImplementationBenchmark.SortImplementation.QUICK_SORT);
-        stringBuilder.append(String.format("*************************%s*************************", benchmarkParameters.getSortImplementation()));
-        benchmarkFactory = new BenchmarkFactory(new MultipleImplementationBenchmark(), benchmarkParameters);
-        benchmarkFactory.start();
-        stringBuilder.append(benchmarkFactory.printFormattedResult());
-
-
         benchmarkParameters.setSortImplementation(MultipleImplementationBenchmark.SortImplementation.NO_SORT);
-        stringBuilder.append(String.format("*************************%s*************************", benchmarkParameters.getSortImplementation()));
-        benchmarkFactory = new BenchmarkFactory(new MultipleImplementationBenchmark(), benchmarkParameters);
-        benchmarkFactory.start();
-        stringBuilder.append(benchmarkFactory.printFormattedResult());
-
-        benchmarkParameters.setSortImplementation(MultipleImplementationBenchmark.SortImplementation.JAVA_SORT);
         stringBuilder.append(String.format("*************************%s*************************", benchmarkParameters.getSortImplementation()));
         benchmarkFactory = new BenchmarkFactory(new MultipleImplementationBenchmark(), benchmarkParameters);
         benchmarkFactory.start();
