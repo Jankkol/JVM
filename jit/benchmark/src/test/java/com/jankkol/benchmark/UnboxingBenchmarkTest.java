@@ -16,7 +16,7 @@ public class UnboxingBenchmarkTest {
 
     private final static long WARM_UP_ITERATION = 100000L;
 
-    private final static long BENCHMARK_ITERATION = 1000000L;
+    private final static long BENCHMARK_ITERATION = 10000000L;
 
     private final static int REPEAT_ITERATION_TIME = 10;
 
@@ -48,7 +48,7 @@ public class UnboxingBenchmarkTest {
         benchmarkFactory = new BenchmarkFactory(new UnboxingBenchmark(), benchmarkParameters);
         benchmarkFactory.start();
         String result = benchmarkFactory.printFormattedResult();
-        WriteResultUtil.writeResult(URL + "/objects", this.getClass().getSimpleName(), result);
+        WriteResultUtil.writeResult(URL + "/objects/java6/server", this.getClass().getSimpleName(), result);
     }
 
 

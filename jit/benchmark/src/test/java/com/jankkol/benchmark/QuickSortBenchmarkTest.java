@@ -13,9 +13,9 @@ public class QuickSortBenchmarkTest {
 
     private final static QuickSortParameters benchmarkParameters = new QuickSortParameters();
 
-    private final static long WARM_UP_ITERATION = 100000L;
+    private final static long WARM_UP_ITERATION = 1000L;
 
-    private final static long BENCHMARK_ITERATION = 100000L;
+    private final static long BENCHMARK_ITERATION = 1000L;
 
     private final static int REPEAT_ITERATION_TIME = 10;
 
@@ -46,6 +46,6 @@ public class QuickSortBenchmarkTest {
         benchmarkFactory = new BenchmarkFactory(new QuickSortBenchmark(), benchmarkParameters);
         benchmarkFactory.start();
         String result = benchmarkFactory.printFormattedResult();
-        WriteResultUtil.writeResult(URL + "/bigArray", this.getClass().getSimpleName(), result);
+        WriteResultUtil.writeResult(URL + "/bigArray/java8/client", this.getClass().getSimpleName(), result);
     }
 }

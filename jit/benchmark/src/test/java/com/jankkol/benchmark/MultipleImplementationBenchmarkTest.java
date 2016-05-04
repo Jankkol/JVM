@@ -82,7 +82,7 @@ public class MultipleImplementationBenchmarkTest {
         benchmarkFactory = new BenchmarkFactory(new MultipleImplementationBenchmark(), benchmarkParameters);
         benchmarkFactory.start();
         stringBuilder.append(benchmarkFactory.printFormattedResult());
-        WriteResultUtil.writeResult(URL + "/abstractCall", this.getClass().getSimpleName(), stringBuilder.toString());
+        WriteResultUtil.writeResult(URL + "/abstractCall/java8/client", this.getClass().getSimpleName(), stringBuilder.toString());
     }
 
     @Test
