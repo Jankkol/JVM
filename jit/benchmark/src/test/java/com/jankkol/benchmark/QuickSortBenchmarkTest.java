@@ -13,15 +13,15 @@ public class QuickSortBenchmarkTest {
 
     private final static QuickSortParameters benchmarkParameters = new QuickSortParameters();
 
-    private final static long WARM_UP_ITERATION = 1000L;
+    private final static long WARM_UP_ITERATION = 100L;
 
-    private final static long BENCHMARK_ITERATION = 1000L;
+    private final static long BENCHMARK_ITERATION = 10000L;
 
     private final static int REPEAT_ITERATION_TIME = 10;
 
     private final static int MAX_RAND = 100;
 
-    private final static String URL = "results/QuickSortBenchmark";
+    private final static String URL = "results/QuickSortBenchmark/additionalTesting";
 
     @BeforeClass
     public static void setup() {
@@ -46,6 +46,6 @@ public class QuickSortBenchmarkTest {
         benchmarkFactory = new BenchmarkFactory(new QuickSortBenchmark(), benchmarkParameters);
         benchmarkFactory.start();
         String result = benchmarkFactory.printFormattedResult();
-        WriteResultUtil.writeResult(URL + "/bigArray/java8/client", this.getClass().getSimpleName(), result);
+        WriteResultUtil.writeResult(URL + "10000iteration/server", this.getClass().getSimpleName(), result);
     }
 }
