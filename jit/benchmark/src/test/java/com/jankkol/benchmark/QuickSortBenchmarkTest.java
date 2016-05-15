@@ -37,7 +37,7 @@ public class QuickSortBenchmarkTest {
         benchmarkFactory = new BenchmarkFactory(new QuickSortBenchmark(), benchmarkParameters);
         benchmarkFactory.start();
         String result = benchmarkFactory.printFormattedResult();
-        WriteResultUtil.writeResult(URL + "/smallArray", this.getClass().getSimpleName(), result);
+        //WriteResultUtil.writeResult(URL + "/smallArray", this.getClass().getSimpleName(), result);
     }
 
     @Test
@@ -46,6 +46,6 @@ public class QuickSortBenchmarkTest {
         benchmarkFactory = new BenchmarkFactory(new QuickSortBenchmark(), benchmarkParameters);
         benchmarkFactory.start();
         String result = benchmarkFactory.printFormattedResult();
-        WriteResultUtil.writeResult(URL + "10000iteration/server", this.getClass().getSimpleName(), result);
+        //WriteResultUtil.writeResult(URL + "10000iteration/server", this.getClass().getSimpleName(), result);
     }
 }
